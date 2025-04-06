@@ -173,10 +173,4 @@ public class PlayerHealth : MonoBehaviour
             healthText.text = $"{currentHealth}/{maxHealth}";
         }
     }
-
-    // (Optional Debug)
-    // void Update()
-    // {
-    //     if (Input.GetKeyDown(KeyCode.K)) TakeDamage(10);
-    // }
 }
