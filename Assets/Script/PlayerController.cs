@@ -51,7 +51,7 @@ public class PlayerController : MonoBehaviour
 
     void Update() // ใช้ Update สำหรับ Input และ Logic ที่ไม่เกี่ยวกับ Physics โดยตรง
     {
-        HandleSpriteFlip(); // จัดการการกลับด้าน Sprite
+        //HandleSpriteFlip(); // จัดการการกลับด้าน Sprite
         HandleAnimationParameters(); // จัดการ Parameters ของ Animator (แยกออกมาเพื่อความชัดเจน)
     }
 
