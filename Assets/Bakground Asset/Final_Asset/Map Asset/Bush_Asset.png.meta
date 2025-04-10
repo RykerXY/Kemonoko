@@ -1,0 +1,1209 @@
+fileFormatVersion: 2
+guid: e10406a8444b7764cb030f69d75e5153
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3158673883564932078
+    second: Bush_Asset_0
+  - first:
+      213: 2730242645569269210
+    second: Bush_Asset_1
+  - first:
+      213: 5116934822682968382
+    second: Bush_Asset_2
+  - first:
+      213: 467537775697025020
+    second: Bush_Asset_3
+  - first:
+      213: -8685414884453541008
+    second: Bush_Asset_4
+  - first:
+      213: 8156219170397875756
+    second: Bush_Asset_5
+  - first:
+      213: -7995675654407070460
+    second: Bush_Asset_6
+  - first:
+      213: -9024956006579646782
+    second: Bush_Asset_7
+  - first:
+      213: 7203272893134361086
+    second: Bush_Asset_8
+  - first:
+      213: 496872498526441016
+    second: Bush_Asset_9
+  - first:
+      213: 6760761924690520170
+    second: Bush_Asset_10
+  - first:
+      213: 827499935879595096
+    second: Bush_Asset_11
+  - first:
+      213: 5074085068204595878
+    second: Bush_Asset_12
+  - first:
+      213: -1590818762252791401
+    second: Bush_Asset_13
+  - first:
+      213: -7644995399523293053
+    second: Bush_Asset_14
+  - first:
+      213: 5455798303543197887
+    second: Bush_Asset_15
+  - first:
+      213: 5741615221555558044
+    second: Bush_Asset_16
+  - first:
+      213: 7717444038316203293
+    second: Bush_Asset_17
+  - first:
+      213: 8522137422067438159
+    second: Bush_Asset_18
+  - first:
+      213: -6348262025409808541
+    second: Bush_Asset_19
+  - first:
+      213: -6864945945987268745
+    second: Bush_Asset_20
+  - first:
+      213: 2426449854351326130
+    second: Bush_Asset_21
+  - first:
+      213: 5534426958184917300
+    second: Bush_Asset_22
+  - first:
+      213: 2037573988846596740
+    second: Bush_Asset_23
+  - first:
+      213: 87886729818792920
+    second: Bush_Asset_24
+  - first:
+      213: 5352629542258653750
+    second: Bush_Asset_25
+  - first:
+      213: -5468820925341578767
+    second: Bush_Asset_26
+  - first:
+      213: -1220387504590926422
+    second: Bush_Asset_27
+  - first:
+      213: 4753708726035562923
+    second: Bush_Asset_28
+  - first:
+      213: 261477899555141532
+    second: Bush_Asset_29
+  - first:
+      213: 4584814920853228978
+    second: Bush_Asset_30
+  - first:
+      213: -4652944791179851140
+    second: Bush_Asset_31
+  - first:
+      213: -3830324879678166795
+    second: Bush_Asset_32
+  - first:
+      213: 5402283281005115478
+    second: Bush_Asset_33
+  - first:
+      213: 3724944178831953392
+    second: Bush_Asset_34
+  - first:
+      213: -7459390252497599533
+    second: Bush_Asset_35
+  - first:
+      213: 4190033992361183959
+    second: Bush_Asset_36
+  - first:
+      213: 3253615868506219566
+    second: Bush_Asset_37
+  - first:
+      213: 706363782710519772
+    second: Bush_Asset_38
+  - first:
+      213: -4437705344731412628
+    second: Bush_Asset_39
+  - first:
+      213: 5097511835369657627
+    second: Bush_Asset_40
+  - first:
+      213: 197508073838770523
+    second: Bush_Asset_41
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Bush_Asset_0
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 2220
+        width: 124
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eebf037692dd5db20800000000000000
+      internalID: 3158673883564932078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bush_Asset_1
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 2218
+        width: 142
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: add67cf7835c3e520800000000000000
+      internalID: 2730242645569269210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bush_Asset_2
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 2152
+        width: 291
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3148dc4c11030740800000000000000
+      internalID: 5116934822682968382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bush_Asset_3
+      rect:
+        serializedVersion: 2
+        x: 981
+        y: 2147
+        width: 280
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf75f7f31270d7600800000000000000
+      internalID: 467537775697025020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bush_Asset_4
+      rect:
+        serializedVersion: 2
+        x: 1306
+        y: 2194
+        width: 339
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07b914d0e25377780800000000000000
+      internalID: -8685414884453541008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bush_Asset_5
+      rect:
+        serializedVersion: 2
+        x: 1651
+        y: 2233
+        width: 126
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2eebc93f16b03170800000000000000
+      internalID: 8156219170397875756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bush_Asset_6
+      rect:
+        serializedVersion: 2
+        x: 1816
+        y: 2244
+        width: 62
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40dd3dfea57a90190800000000000000
+      internalID: -7995675654407070460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bush_Asset_7
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 1722
+        width: 374
+        height: 466
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ceca4a045ae0c280800000000000000
+      internalID: -9024956006579646782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bush_Asset_8
+      rect:
+        serializedVersion: 2
+        x: 1645
+        y: 2133
+        width: 121
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef1597f188a27f360800000000000000
+      internalID: 7203272893134361086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bush_Asset_9
+      rect:
+        serializedVersion: 2
+        x: 1807
+        y: 2166
+        width: 80
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83e4455a7ee35e600800000000000000
+      internalID: 496872498526441016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bush_Asset_10
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 1699
+        width: 268
+        height: 407
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a682a24862d03dd50800000000000000
+      internalID: 6760761924690520170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bush_Asset_11
+      rect:
+        serializedVersion: 2
+        x: 1263
+        y: 2065
+        width: 226
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85403c1becedb7b00800000000000000
+      internalID: 827499935879595096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bush_Asset_12
+      rect:
+        serializedVersion: 2
+        x: 1601
+        y: 1717
+        width: 196
+        height: 392
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6aad2726c75ca6640800000000000000
+      internalID: 5074085068204595878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bush_Asset_13
+      rect:
+        serializedVersion: 2
+        x: 1836
+        y: 2098
+        width: 43
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79155e5a3c64ce9e0800000000000000
+      internalID: -1590818762252791401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bush_Asset_14
+      rect:
+        serializedVersion: 2
+        x: 907
+        y: 1677
+        width: 332
+        height: 393
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3882be5603587e590800000000000000
+      internalID: -7644995399523293053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bush_Asset_15
+      rect:
+        serializedVersion: 2
+        x: 1843
+        y: 2044
+        width: 29
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb00fd8a6a3e6bb40800000000000000
+      internalID: 5455798303543197887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bush_Asset_16
+      rect:
+        serializedVersion: 2
+        x: 1845
+        y: 1994
+        width: 32
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c967bc5af905eaf40800000000000000
+      internalID: 5741615221555558044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bush_Asset_17
+      rect:
+        serializedVersion: 2
+        x: 1286
+        y: 1686
+        width: 230
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1d1bcdc67ed91b60800000000000000
+      internalID: 7717444038316203293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bush_Asset_18
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 1268
+        width: 512
+        height: 355
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f42946945d6b44670800000000000000
+      internalID: 8522137422067438159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bush_Asset_19
+      rect:
+        serializedVersion: 2
+        x: 562
+        y: 1271
+        width: 456
+        height: 350
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 367b85a825176e7a0800000000000000
+      internalID: -6348262025409808541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bush_Asset_20
+      rect:
+        serializedVersion: 2
+        x: 1065
+        y: 1320
+        width: 776
+        height: 296
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77fbb2fb800dab0a0800000000000000
+      internalID: -6864945945987268745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bush_Asset_21
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 935
+        width: 515
+        height: 278
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2bbb8e1694b7ca120800000000000000
+      internalID: 2426449854351326130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bush_Asset_22
+      rect:
+        serializedVersion: 2
+        x: 572
+        y: 920
+        width: 607
+        height: 319
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43925fdeefb3ecc40800000000000000
+      internalID: 5534426958184917300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bush_Asset_23
+      rect:
+        serializedVersion: 2
+        x: 1225
+        y: 1001
+        width: 465
+        height: 276
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 482f6c05fbae64c10800000000000000
+      internalID: 2037573988846596740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bush_Asset_24
+      rect:
+        serializedVersion: 2
+        x: 1704
+        y: 1000
+        width: 171
+        height: 278
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d3e15fd38c383100800000000000000
+      internalID: 87886729818792920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bush_Asset_25
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 612
+        width: 518
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63ab690953c584a40800000000000000
+      internalID: 5352629542258653750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bush_Asset_26
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 562
+        width: 331
+        height: 329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f9cacce758da14b0800000000000000
+      internalID: -5468820925341578767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bush_Asset_27
+      rect:
+        serializedVersion: 2
+        x: 1037
+        y: 659
+        width: 383
+        height: 258
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aad488cc700501fe0800000000000000
+      internalID: -1220387504590926422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bush_Asset_28
+      rect:
+        serializedVersion: 2
+        x: 1492
+        y: 676
+        width: 330
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba1460d66e098f140800000000000000
+      internalID: 4753708726035562923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bush_Asset_29
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 357
+        width: 274
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c977997a3c4f0a300800000000000000
+      internalID: 261477899555141532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bush_Asset_30
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 282
+        width: 383
+        height: 257
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2bd0e5e01e880af30800000000000000
+      internalID: 4584814920853228978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bush_Asset_31
+      rect:
+        serializedVersion: 2
+        x: 853
+        y: 274
+        width: 181
+        height: 273
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7a88326d5b6d6fb0800000000000000
+      internalID: -4652944791179851140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bush_Asset_32
+      rect:
+        serializedVersion: 2
+        x: 1119
+        y: 276
+        width: 337
+        height: 298
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f8217cd0d3f7dac0800000000000000
+      internalID: -3830324879678166795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bush_Asset_33
+      rect:
+        serializedVersion: 2
+        x: 1379
+        y: 464
+        width: 311
+        height: 177
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65877548504c8fa40800000000000000
+      internalID: 5402283281005115478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bush_Asset_34
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 84
+        width: 232
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0fd007bbef8a1b330800000000000000
+      internalID: 3724944178831953392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bush_Asset_35
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 54
+        width: 295
+        height: 205
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d38ede361cea7890800000000000000
+      internalID: -7459390252497599533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bush_Asset_36
+      rect:
+        serializedVersion: 2
+        x: 1501
+        y: 81
+        width: 121
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7da008f57bdf52a30800000000000000
+      internalID: 4190033992361183959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bush_Asset_37
+      rect:
+        serializedVersion: 2
+        x: 1625
+        y: 253
+        width: 250
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2423edd46a272d20800000000000000
+      internalID: 3253615868506219566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bush_Asset_38
+      rect:
+        serializedVersion: 2
+        x: 729
+        y: 84
+        width: 267
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd769ae2e128dc900800000000000000
+      internalID: 706363782710519772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bush_Asset_39
+      rect:
+        serializedVersion: 2
+        x: 1058
+        y: 84
+        width: 181
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c678e6d308a1a62c0800000000000000
+      internalID: -4437705344731412628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bush_Asset_40
+      rect:
+        serializedVersion: 2
+        x: 1284
+        y: 90
+        width: 165
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b15de89a1000eb640800000000000000
+      internalID: 5097511835369657627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bush_Asset_41
+      rect:
+        serializedVersion: 2
+        x: 1673
+        y: 92
+        width: 133
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b597e65fb80bdb200800000000000000
+      internalID: 197508073838770523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Bush_Asset_0: 3158673883564932078
+      Bush_Asset_1: 2730242645569269210
+      Bush_Asset_10: 6760761924690520170
+      Bush_Asset_11: 827499935879595096
+      Bush_Asset_12: 5074085068204595878
+      Bush_Asset_13: -1590818762252791401
+      Bush_Asset_14: -7644995399523293053
+      Bush_Asset_15: 5455798303543197887
+      Bush_Asset_16: 5741615221555558044
+      Bush_Asset_17: 7717444038316203293
+      Bush_Asset_18: 8522137422067438159
+      Bush_Asset_19: -6348262025409808541
+      Bush_Asset_2: 5116934822682968382
+      Bush_Asset_20: -6864945945987268745
+      Bush_Asset_21: 2426449854351326130
+      Bush_Asset_22: 5534426958184917300
+      Bush_Asset_23: 2037573988846596740
+      Bush_Asset_24: 87886729818792920
+      Bush_Asset_25: 5352629542258653750
+      Bush_Asset_26: -5468820925341578767
+      Bush_Asset_27: -1220387504590926422
+      Bush_Asset_28: 4753708726035562923
+      Bush_Asset_29: 261477899555141532
+      Bush_Asset_3: 467537775697025020
+      Bush_Asset_30: 4584814920853228978
+      Bush_Asset_31: -4652944791179851140
+      Bush_Asset_32: -3830324879678166795
+      Bush_Asset_33: 5402283281005115478
+      Bush_Asset_34: 3724944178831953392
+      Bush_Asset_35: -7459390252497599533
+      Bush_Asset_36: 4190033992361183959
+      Bush_Asset_37: 3253615868506219566
+      Bush_Asset_38: 706363782710519772
+      Bush_Asset_39: -4437705344731412628
+      Bush_Asset_4: -8685414884453541008
+      Bush_Asset_40: 5097511835369657627
+      Bush_Asset_41: 197508073838770523
+      Bush_Asset_5: 8156219170397875756
+      Bush_Asset_6: -7995675654407070460
+      Bush_Asset_7: -9024956006579646782
+      Bush_Asset_8: 7203272893134361086
+      Bush_Asset_9: 496872498526441016
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
