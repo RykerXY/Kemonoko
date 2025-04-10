@@ -189,9 +189,7 @@ public class PlayerHealth : MonoBehaviour
         flashCoroutine = null;
     }
 
-    // --- ฟังก์ชันอัปเดต Text (ถ้าจำเป็นต้องมีในนี้) ---
-    /*
-    public void updateHelathText()
+    /*public void updateHelathText()
     {
         if (healthText != null)
         {
@@ -201,6 +199,5 @@ public class PlayerHealth : MonoBehaviour
         {
              Debug.LogWarning("HealthText is not assigned in PlayerHealth.");
         }
-    }
-    */
+    }*/
 }

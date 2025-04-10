@@ -1,4 +1,5 @@
-using TMPro;
+// GlobalPoint.cs (แก้ไข)
+using TMPro; // << เอาออกได้ถ้าไม่ใช้ที่นี่แล้ว
 using UnityEngine;
 
 public class GlobalPoint : MonoBehaviour
@@ -12,11 +13,15 @@ public class GlobalPoint : MonoBehaviour
     public int orePoints = 0;
     public int veggiePoints = 0;
 
-    [Header("UI Elements")]
-    public TextMeshProUGUI flowerPointsText;
-    public TextMeshProUGUI fireflyPointsText;
-    public TextMeshProUGUI orePointsText;
-    public TextMeshProUGUI veggiePointsText;
+    [Header("Gold")]
+    public int gold = 0;
+
+    private bool firefly = false;
+    private bool flower = false;
+    private bool ore = false;
+    private bool veggie = false;
+
+    private bool isGoodEnding = false;
 
     void Awake()
     {
@@ -24,64 +29,81 @@ public class GlobalPoint : MonoBehaviour
         {
             instance = this;
             DontDestroyOnLoad(gameObject);
-            Debug.Log("GlobalPoint Instance Created and set to DontDestroyOnLoad.");
         }
         else if (instance != this)
         {
-            Debug.LogWarning("Another GlobalPoint instance detected. Destroying this duplicate.");
             Destroy(gameObject);
+            return; 
         }
     }
+
     void Update()
     {
         UpdateKarma();
-        UpdateDisplay();
+        if(karmaPoints >= 2 && !isGoodEnding)
+        {
+            isGoodEnding = true;
+            Debug.Log("Good Ending Achieved!");
+        }
     }
-    
-    void UpdateKarma()
+
+    void UpdateKarma() 
     {
         if (flowerPoints >= 60)
         {
-            karmaPoints += 1;
-            flowerPoints = 0;
-            Debug.Log("Karma points: " + karmaPoints);
+            if(!flower) // เช็คว่าเพิ่มแล้วหรือยัง
+            {
+                flower = true; // ตั้งค่าให้เพิ่มแล้ว
+                karmaPoints += 1;
+            }
+            flowerPoints = 0; // รีเซ็ต Flower
+            Debug.Log("Karma increased from Flowers. New Karma: " + karmaPoints);
         }
-        if (flowerPoints >= 60)
+        if (fireflyPoints >= 60)
         {
-            karmaPoints += 1;
-            flowerPoints = 0;
-            Debug.Log("Firefly points: " + flowerPoints);
+            if(!firefly) // เช็คว่าเพิ่มแล้วหรือยัง
+            {
+                firefly = true; // ตั้งค่าให้เพิ่มแล้ว
+                karmaPoints += 1;
+            }
+            fireflyPoints = 0; // รีเซ็ต Firefly
+            Debug.Log("Karma increased from Fireflies. New Karma: " + karmaPoints);
         }
-        if (orePoints >= 4)
+        if (orePoints >= 32)
         {
-            karmaPoints += 1;
-            orePoints = 0;
-            Debug.Log("Ore points: " + karmaPoints);
+            if(!ore) // เช็คว่าเพิ่มแล้วหรือยัง
+            {
+                ore = true; // ตั้งค่าให้เพิ่มแล้ว
+                karmaPoints += 1;
+            }
+            orePoints = 0; // รีเซ็ต Ore
+            Debug.Log("Karma increased from Ores. New Karma: " + karmaPoints);
         }
-        if (veggiePoints > 20)
+        if (veggiePoints >= 20)
         {
-            karmaPoints += 1;
-            veggiePoints = 0;
-            Debug.Log("Veggie points: " + veggiePoints);
+            if(!veggie) // เช็คว่าเพิ่มแล้วหรือยัง
+            {
+                veggie = true; // ตั้งค่าให้เพิ่มแล้ว
+                karmaPoints += 1;
+            }
+            veggiePoints = 0; // รีเซ็ต Veggie
+            Debug.Log("Karma increased from Veggies. New Karma: " + karmaPoints);
         }
     }
-    void UpdateDisplay()
+
+    public void AddPoints(string type, int amount)
     {
-        if (flowerPointsText != null)
+        switch (type.ToLower())
         {
-            flowerPointsText.text = "Flower Points: " + flowerPoints;
+            case "flower": flowerPoints += amount; break;
+            case "firefly": fireflyPoints += amount; break;
+            case "ore": orePoints += amount; break;
+            case "veggie": veggiePoints += amount; break;
+            default: Debug.LogWarning($"Unknown point type: {type}"); break;
         }
-        if (fireflyPointsText != null)
-        {
-            fireflyPointsText.text = "Firefly: " + flowerPoints;
-        }
-        if (orePointsText != null)
-        {
-            orePointsText.text = "Ore Collected: " + orePoints;
-        }
-        if (veggiePointsText != null)
-        {
-            veggiePointsText.text = "Veggie Points: " + veggiePoints;
-        }
+    }
+    public void AddGold(int amount)
+    {
+        gold += amount;
     }
 }

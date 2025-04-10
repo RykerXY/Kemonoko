@@ -1,85 +1,122 @@
-// NPCDialog.cs modifications
+// NPCDialog.cs
 using UnityEngine;
 using UnityEngine.Events;
-using TMPro;
+using TMPro; // ยังคงจำเป็นสำหรับ worldDialogText
 
 public class NPCDialog : MonoBehaviour
 {
-    // ... (Header attributes and variables remain the same) ...
-    [Header("Dialog Settings")]
-    [Tooltip("Sentences this NPC says if NOT starting a multi-speaker conversation.")]
-    [TextArea(3, 10)]
-    public string[] sentences;
-
-    [Header("Multi-Speaker Conversation (Optional)")]
-    [Tooltip("Check this if interacting with this NPC should trigger the sequence below.")]
-    public bool isConversationStarter = false;
-    [Tooltip("The sequence of lines involving multiple speakers.")]
-    public DialogLine[] conversationSequence;
-
-    [Header("World Space Dialog Bubble")]
+    [Header("Speaker Visuals")]
+    [Tooltip("Animator ของตัวละคร NPC นี้ (ถ้าต้องการให้มี Animation ตอนพูด)")]
+    public Animator speakerAnimator; // << NEW: เพิ่ม Animator
+    [Tooltip("GameObject ที่เป็นกรอบคำพูด (จะถูก เปิด/ปิด)")]
     public GameObject dialogBubbleObject;
+    [Tooltip("TextMeshProUGUI ที่ใช้แสดงข้อความในกรอบคำพูด")]
     public TextMeshProUGUI worldDialogText;
 
+    [Header("First Interaction Dialog")]
+    [Tooltip("ติ๊กถ้าต้องการให้เริ่มบทสนทนาแบบหลายคนเมื่อคุยครั้งแรก")]
+    public bool isFirstInteractionConversation = false;
+    [Tooltip("บทสนทนาแบบหลายคน (ถ้า isFirstInteractionConversation เป็น true)")]
+    public DialogLine[] firstInteractionConversation;
+    [Tooltip("ประโยคที่ NPC พูดคนเดียว (ถ้า isFirstInteractionConversation เป็น false)")]
+    [TextArea(3, 10)]
+    public string[] firstInteractionSentences;
+
+    [Header("Subsequent Interaction Dialog (Optional)")]
+    [Tooltip("บทสนทนา/ประโยคที่จะใช้หลังจากคุยครั้งแรกไปแล้ว (ถ้าเว้นว่าง จะใช้ First Interaction ซ้ำ)")]
+    public bool hasSubsequentDialog = false; // << NEW: ติ๊กเพื่อเปิดใช้งาน Subsequent Dialog
+    [Tooltip("ติ๊กถ้าต้องการให้เริ่มบทสนทนาแบบหลายคนเมื่อคุยครั้งถัดไป")]
+    public bool isSubsequentInteractionConversation = false; // << NEW
+    [Tooltip("บทสนทนาแบบหลายคนสำหรับครั้งถัดไป (ถ้า hasSubsequentDialog และ isSubsequentInteractionConversation เป็น true)")]
+    public DialogLine[] subsequentInteractionConversation; // << NEW
+    [Tooltip("ประโยคที่ NPC พูดคนเดียวสำหรับครั้งถัดไป (ถ้า hasSubsequentDialog และ isSubsequentInteractionConversation เป็น false)")]
+    [TextArea(3, 10)]
+    public string[] subsequentInteractionSentences; // << NEW
+
+
     [Header("Events")]
-    [Tooltip("Called when this NPC finishes its SINGLE dialogue OR when a multi-speaker conversation started by this NPC finishes.")]
-    public UnityEvent onDialogComplete;
+    [Tooltip("Event ที่จะถูกเรียก *หลังจาก* บทสนทนา (ทั้งครั้งแรกและครั้งถัดไป) จบลง")]
+    public UnityEvent onDialogComplete; // Event เดิม ใช้สำหรับทั้งสองแบบ
 
+    // --- Internal State ---
     private bool playerInRange = false;
+    private bool hasInteractedBefore = false; // << NEW: สถานะว่าเคยคุยจบครั้งแรกไปหรือยัง
 
-    // ... (Start method remains the same) ...
     void Start()
     {
-        if (dialogBubbleObject != null)
-            dialogBubbleObject.SetActive(false);
-        if (isConversationStarter)
-        {
-            for(int i = 0; i < conversationSequence.Length; i++)
-            {
-                if (conversationSequence[i].speaker == null) { Debug.LogError($"NPC '{gameObject.name}': Conversation Sequence line {i+1} is missing a Speaker reference!", gameObject); }
-                else if (conversationSequence[i].speaker.worldDialogText == null || conversationSequence[i].speaker.dialogBubbleObject == null) { Debug.LogError($"NPC '{gameObject.name}': Speaker '{conversationSequence[i].speaker.gameObject.name}' in Conversation Sequence line {i+1} is missing bubble/text references!", conversationSequence[i].speaker.gameObject); }
-            }
-        }
-        if (worldDialogText == null || dialogBubbleObject == null) { Debug.LogError($"NPC '{gameObject.name}' is missing Dialog Bubble Object or World Dialog Text reference!", gameObject); }
-    }
+        // Validate required components
+        if (dialogBubbleObject == null) Debug.LogError($"NPC '{gameObject.name}': Missing Dialog Bubble Object reference!", gameObject);
+        if (worldDialogText == null) Debug.LogError($"NPC '{gameObject.name}': Missing World Dialog Text reference!", gameObject);
 
+        // Validate optional components if used
+        if (!string.IsNullOrEmpty(GetFirstInteractionAnimationTrigger()) && speakerAnimator == null)
+            Debug.LogWarning($"NPC '{gameObject.name}': Has animation trigger but missing Speaker Animator reference!", gameObject);
+
+        // Validate dialog content (basic checks)
+        if (!isFirstInteractionConversation && (firstInteractionSentences == null || firstInteractionSentences.Length == 0))
+            Debug.LogWarning($"NPC '{gameObject.name}': Configured for single dialog (first) but has no sentences.", gameObject);
+        if (isFirstInteractionConversation && (firstInteractionConversation == null || firstInteractionConversation.Length == 0))
+            Debug.LogWarning($"NPC '{gameObject.name}': Configured for conversation (first) but sequence is empty.", gameObject);
+
+        // Validate subsequent dialog if enabled
+        if(hasSubsequentDialog)
+        {
+            if (!isSubsequentInteractionConversation && (subsequentInteractionSentences == null || subsequentInteractionSentences.Length == 0))
+                Debug.LogWarning($"NPC '{gameObject.name}': Configured for single subsequent dialog but has no sentences.", gameObject);
+             if (isSubsequentInteractionConversation && (subsequentInteractionConversation == null || subsequentInteractionConversation.Length == 0))
+                 Debug.LogWarning($"NPC '{gameObject.name}': Configured for subsequent conversation but sequence is empty.", gameObject);
+        }
+
+
+        SetBubbleActive(false); // ซ่อน Bubble ตอนเริ่ม
+    }
 
     void Update()
     {
-        // If player is in range, presses E, AND dialog is NOT currently active
-        if (playerInRange && Input.GetKeyDown(KeyCode.E) && !DialogManager.instance.IsDialogActive()) // <<<< CHANGED HERE
+        // Check for interaction input only if player is in range and no dialog is currently active globally
+        if (playerInRange && Input.GetKeyDown(KeyCode.E) && !DialogManager.instance.IsDialogActive())
         {
-            // Prioritize starting the multi-speaker conversation if configured
-            if (isConversationStarter && conversationSequence != null && conversationSequence.Length > 0)
+            TriggerInteraction();
+        }
+    }
+
+    private void TriggerInteraction()
+    {
+        bool useSubsequent = hasSubsequentDialog && hasInteractedBefore;
+
+        // Determine which dialog sequence to use
+        bool useConversation = useSubsequent ? isSubsequentInteractionConversation : isFirstInteractionConversation;
+        DialogLine[] conversation = useSubsequent ? subsequentInteractionConversation : firstInteractionConversation;
+        string[] sentences = useSubsequent ? subsequentInteractionSentences : firstInteractionSentences;
+
+        if (useConversation)
+        {
+            if (conversation != null && conversation.Length > 0)
             {
-                DialogManager.instance.StartConversation(conversationSequence, onDialogComplete);
+                // Pass 'this' as the starter NPC, and the correct onComplete event
+                DialogManager.instance.StartConversation(conversation, this, onDialogComplete);
             }
-            // Fallback to the NPC's own simple dialog
-            else if (sentences != null && sentences.Length > 0)
+            else
             {
+                Debug.LogWarning($"NPC '{gameObject.name}': Tried to start {(useSubsequent ? "subsequent" : "first")} conversation, but sequence is empty/null.", gameObject);
+            }
+        }
+        else // Use single NPC sentences
+        {
+            if (sentences != null && sentences.Length > 0)
+            {
+                // Pass 'this' as the speaker NPC, and the correct onComplete event
                 DialogManager.instance.StartDialog(sentences, this, onDialogComplete);
             }
+            else
+            {
+                Debug.LogWarning($"NPC '{gameObject.name}': Tried to start {(useSubsequent ? "subsequent" : "first")} single dialog, but sentences are empty/null.", gameObject);
+            }
         }
     }
 
-    // ... (OnTriggerEnter2D, OnTriggerExit2D, SetBubbleActive, GetWorldDialogTextComponent, IsPlayerInRange methods remain the same) ...
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.CompareTag("Player"))
-        {
-            playerInRange = true;
-            Debug.Log($"Player entered range of {gameObject.name}. IsStarter: {isConversationStarter}");
-        }
-    }
 
-    private void OnTriggerExit2D(Collider2D other)
-    {
-        if (other.CompareTag("Player"))
-        {
-            playerInRange = false;
-             Debug.Log($"Player exited range of {gameObject.name}");
-        }
-    }
+    // --- Public Methods Called by DialogManager or Triggers ---
 
     public void SetBubbleActive(bool isActive)
     {
@@ -94,18 +131,47 @@ public class NPCDialog : MonoBehaviour
         return worldDialogText;
     }
 
-     public bool IsPlayerInRange()
+    public Animator GetSpeakerAnimator() // << NEW: Getter for Animator
     {
-        return playerInRange;
+        return speakerAnimator;
     }
-    // --------------------------------
-}
 
-// Don't forget the DialogLine struct if it's not in its own file
-// [System.Serializable]
-// public struct DialogLine
-// {
-//     public NPCDialog speaker;
-//     [TextArea(3, 5)]
-//     public string sentence;
-// }
+    // Called by DialogManager after the FIRST interaction finishes
+    public void MarkFirstInteractionComplete() // << NEW
+    {
+        if (!hasInteractedBefore)
+        {
+            hasInteractedBefore = true;
+            Debug.Log($"NPC '{gameObject.name}' marked as interacted.");
+            // Add any logic here if needed when the first interaction is marked (e.g., save state)
+        }
+    }
+
+
+    // --- Collision Detection ---
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            playerInRange = true;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            playerInRange = false;
+        }
+    }
+
+    // --- Helper for Start() validation ---
+     private string GetFirstInteractionAnimationTrigger()
+     {
+         if (isFirstInteractionConversation && firstInteractionConversation != null && firstInteractionConversation.Length > 0)
+             return firstInteractionConversation[0].animationTrigger; // Check first line of conversation
+         // For single sentences, we can't easily check here without more complex logic
+         return null;
+     }
+}

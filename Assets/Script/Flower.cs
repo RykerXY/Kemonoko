@@ -7,20 +7,12 @@ public class Flower : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            // Add karma points to the player
-            GlobalPoint globalPoint = Object.FindFirstObjectByType<GlobalPoint>();
-            if (globalPoint != null)
-            {
-                globalPoint.flowerPoints += 1;
-                Debug.Log("Flower points: " + globalPoint.flowerPoints);
-            }
+            GlobalPoint.instance.flowerPoints += 1;
 
-            // Destroy the flower after collecting it
             Destroy(gameObject);
         }
     }
 
-    //Destroy this flower if x seconds have passed
     void Update()
     {
         TimeToDestroy -= Time.deltaTime;

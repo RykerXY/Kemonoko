@@ -5,18 +5,48 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Game.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
   - enabled: 1
     path: Assets/Scenes/MainMenu.unity
     guid: f170aabc34a01d245b61a183b6c33b84
   - enabled: 1
-    path: Assets/Scenes/MiniGame1.unity
+    path: Assets/Scenes/Day 1/Day1 Daytime.unity
+    guid: fa7b75e53714ed84d9da67f2187b874a
+  - enabled: 1
+    path: Assets/Scenes/Day 1/MiniGame1.unity
     guid: 8bed418e56ef904478777bdc258049e4
   - enabled: 1
-    path: Assets/Scenes/MiniGame2.unity
+    path: Assets/Scenes/Day 1/Day1 Daytime 1.unity
+    guid: 0e4dee7b5c2d88f4e98f5feb7bbd6356
+  - enabled: 1
+    path: Assets/Scenes/Day 1/Day1 Night.unity
+    guid: 20625017368c0d64685cba2a10220815
+  - enabled: 1
+    path: Assets/Scenes/Day 1/MiniGame2.unity
     guid: 7a6577dd20a7b4a419a201f7f66d13c3
+  - enabled: 1
+    path: Assets/Scenes/Day 1/Day1 Night 1.unity
+    guid: e5de65e2850d78e46958f63731491730
+  - enabled: 1
+    path: Assets/Scenes/Day 2/Day2.unity
+    guid: 0da35fe86c3217446bd1b3651d930aea
+  - enabled: 1
+    path: Assets/Scenes/Day 2/MiniGame3.unity
+    guid: 559fa13d9f5dc7f40b441ad91f06d685
+  - enabled: 1
+    path: Assets/Scenes/Day 2/Day2 1.unity
+    guid: 480f5290590cedf439dcc31b84308e54
+  - enabled: 1
+    path: Assets/Scenes/Day 3/Day3.unity
+    guid: 4e5b7c25a2db92f48b65917bae5c35a7
+  - enabled: 1
+    path: Assets/Scenes/Day 3/MiniGame4.unity
+    guid: a572fa06725c28c4796f59e3d344eb02
+  - enabled: 1
+    path: Assets/Scenes/Day 3/Day3 Cutscene.unity
+    guid: 40009469ecf25674faca3c6faf05f9ef
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
